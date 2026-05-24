@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Download the code
@@ -22,5 +22,5 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run test
+      - name: Run tests
         run: pytest
